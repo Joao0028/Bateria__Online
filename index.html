@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bateria Online</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="images/bateria.png">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilos.css">
+
+</head>
+<body>
+
+    <h1>Bateria</h1>
+
+    <section class="teclado">
+        <button class="tecla tecla_pom">Pom</button>
+        <button class="tecla tecla_clap">Clap</button>
+        <button class="tecla tecla_tim">Tim</button>
+
+        <button class="tecla tecla_puff">Puff</button>
+        <button class="tecla tecla_splash">Splash</button>
+        <button class="tecla tecla_toim">Toim</button>
+
+        <button class="tecla tecla_psh">Psh</button>
+        <button class="tecla tecla_tic">Tic</button>
+        <button class="tecla tecla_tom">Tom</button>
+    </section>
+
+    <audio src="sounds/keyq.wav" id="som_tecla_pom"></audio>
+    <audio src="sounds/keyw.wav" id="som_tecla_clap"></audio>
+    <audio src="sounds/keye.wav" id="som_tecla_tim"></audio>
+    <audio src="sounds/keya.wav" id="som_tecla_puff"></audio>
+    <audio src="sounds/keys.wav" id="som_tecla_splash"></audio>
+    <audio src="sounds/keyd.wav" id="som_tecla_toim"></audio>
+    <audio src="sounds/keyz.wav" id="som_tecla_psh"></audio>
+    <audio src="sounds/keyx.wav" id="som_tecla_tic"></audio>
+    <audio src="sounds/keyc.wav" id="som_tecla_tom"></audio>
+
+
+    
+    <script src="main.js"></script>
+</body>
+</html>
+
+
+<!--"controls" - Faz com que ao colocar <audio ->controls<- src="sounds/keyq.wav" id="som_tecla_pom"></audio> apareçam botoes onde pode reproduzir o som  solicitado-->
+<!-- onclick="alert('Pom')" - O onclick serve par dizer que quando tocarmos no botao selecionado com tag alert escrita alguma coisa dentro, esta escita ira aparecer no inicio da tela com a mensagem selecionada -->
+<!--controls -  Tem a mesma função que o style do css, que quando colocado ddentro da tag especifica do HTML permite mudar o estilo... Pórem a diferença é que o onclick serve para comandos JavaScript...-->
+
+<!--<script src="main.js"></script> - serve para conectar o HTML com a pagina de JavaScript, igual ao link reel que conecta com o CSS-->
+
+<!--IMPORTANTE  - Então aqui tem uma lição muito importante sobre o local da tag script. Conseguimos colocar a tag script tanto no head quanto no body e em qualquer lugar, mas para decidirmos se vamos colocar no head ou no body, é que se o nosso JavaScript depende da estrutura HTML carregada e pronta, devemos colocá-la dentro do body e ao final do body, antes logo antes do fechamento da tag body e não dentro da tag head.-->
+<!--Entretanto - As vezes é melho colocar o "<script src="main.js"></script>" no final acima do body... Para grantir que os elementos estão "conectados" -->
